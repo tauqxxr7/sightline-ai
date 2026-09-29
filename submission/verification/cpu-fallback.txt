@@ -1,0 +1,5 @@
+Verification: cpu_fallback
+Requested: QNNExecutionProvider | Active: CPUExecutionProvider
+QNN/NPU not verified on this device
+JSON report: C:\Users\TAUQEER BHARDE\Documents\Codex\2026-09-27\files-pasted-by-the-user-you\outputs\sightline-ai\submission\verification\cpu-fallback.json
+{"event":"qnn_cpu_fallback"}

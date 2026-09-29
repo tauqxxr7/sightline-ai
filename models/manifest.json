@@ -1,0 +1,35 @@
+{
+  "schema_version": 1,
+  "models": [
+    {
+      "name": "YOLOX-Nano",
+      "purpose": "COCO 80-class object detection",
+      "source": "https://github.com/Megvii-BaseDetection/YOLOX",
+      "version": "0.1.1rc0",
+      "format": "ONNX",
+      "input_shape": [
+        1,
+        3,
+        416,
+        416
+      ],
+      "precision": "FP32",
+      "license": "Apache-2.0; official YOLOX release under repository license (models/YOLOX-LICENSE.txt)",
+      "runtime": "onnxruntime 1.30.0",
+      "expected_provider": "CPUExecutionProvider",
+      "checksum": "sha256:c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+      "status": "pinned_cpu_artifact",
+      "notes": "No weights committed. Release tag legacy preprocessing does not match this artifact; use pinned reference revision. QNN/NPU not verified on this device.",
+      "output_shape": [
+        1,
+        3549,
+        85
+      ],
+      "size_bytes": 3659407,
+      "download_url": "https://github.com/Megvii-BaseDetection/YOLOX/releases/download/0.1.1rc0/yolox_nano.onnx",
+      "reference_revision": "6ddff4824372906469a7fae2dc3206c7aa4bbaee",
+      "preprocessing": "BGR uint8, OpenCV INTER_LINEAR, top-left pad 114, NCHW float32 0..255; no normalization",
+      "postprocessing": "Raw grid decode strides 8/16/32; objectness times class score >0.3; class-agnostic inclusive-pixel NMS IoU 0.45; clip to image; max100"
+    }
+  ]
+}

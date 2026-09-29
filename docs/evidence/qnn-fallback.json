@@ -1,0 +1,132 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-28T17:09:27.666703+00:00",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "processor_source": "Python platform API; not a hardware certification",
+  "snapdragon": "not_detected",
+  "hardware": {
+    "system": "Windows",
+    "os_version": "10.0.26200",
+    "process_architecture": "AMD64",
+    "process_bits": 64,
+    "native_architecture": {
+      "value": "AMD64",
+      "source": "Windows IsWow64Process2",
+      "emulated": false,
+      "error": null
+    },
+    "processor": {
+      "qualcomm": "not_detected",
+      "snapdragon": "not_detected",
+      "source": "Windows processor registry",
+      "values": {
+        "ProcessorNameString": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "Identifier": "Intel64 Family 6 Model 140 Stepping 1",
+        "VendorIdentifier": "GenuineIntel"
+      },
+      "error": null,
+      "note": "CPU identity only; not evidence of NPU execution"
+    }
+  },
+  "python": {
+    "version": "3.12.2",
+    "implementation": "cpython"
+  },
+  "runtime_version": "1.30.0",
+  "runtime_error": null,
+  "qnn_ep_available": false,
+  "provider": {
+    "requested": "QNNExecutionProvider",
+    "available": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "active": "CPUExecutionProvider",
+    "backend": "CPU",
+    "fallback": "cpu",
+    "npu": "QNN/NPU not verified on this device",
+    "npu_verified": false,
+    "version": "1.30.0",
+    "evidence": "Successful run in a CPU-only session with runtime fallback disabled",
+    "fallback_reason": "qnn_unavailable",
+    "fallback_message": "QNN Execution Provider was not detected.",
+    "strict": false
+  },
+  "model": null,
+  "measurements": null,
+  "phase": "Phase 3 provider verification",
+  "result": {
+    "schema_version": 1,
+    "observed_at": "2026-09-28T17:09:27.852427+00:00",
+    "image": {
+      "width": 512,
+      "height": 512
+    },
+    "model": {
+      "name": "YOLOX-Nano",
+      "version": "0.1.1rc0",
+      "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+      "precision": "FP32",
+      "input_shape": [
+        1,
+        3,
+        416,
+        416
+      ]
+    },
+    "runtime": {
+      "requested": "QNNExecutionProvider",
+      "available": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "active": "CPUExecutionProvider",
+      "backend": "CPU",
+      "fallback": "cpu",
+      "npu": "QNN/NPU not verified on this device",
+      "npu_verified": false,
+      "version": "1.30.0",
+      "evidence": "Successful run in a CPU-only session with runtime fallback disabled",
+      "fallback_reason": "qnn_unavailable",
+      "fallback_message": "QNN Execution Provider was not detected.",
+      "strict": false
+    },
+    "detections": [
+      {
+        "label": "person",
+        "class_id": 0,
+        "confidence": 0.9258856773376465,
+        "box": [
+          11.46463680267334,
+          20.272403717041016,
+          368.8679504394531,
+          507.22589111328125
+        ]
+      }
+    ],
+    "thresholds": {
+      "confidence": 0.3,
+      "nms_iou": 0.45,
+      "max_detections": 100
+    },
+    "timings_ms": {
+      "initialization": 75.30989999986559,
+      "preprocessing": 12.165299999878698,
+      "inference": 14.323999999987791,
+      "postprocessing": 3.0159000000367087,
+      "total_pipeline": 104.90709999999126,
+      "total_with_provider_attempt": 149.92060000008678
+    },
+    "run_kind": "cold",
+    "network": "Loopback only; no external inference request",
+    "unsupported": [
+      "OCR",
+      "redaction",
+      "camera",
+      "scene captioning"
+    ]
+  },
+  "verification": "cpu_fallback"
+}

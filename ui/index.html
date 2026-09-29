@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark"><title>SightLine AI — Local visual workspace</title>
+  <link rel="stylesheet" href="/styles/tokens.css"><link rel="stylesheet" href="/styles/app.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to workspace</a>
+<aside class="sidebar" aria-label="Application sidebar">
+  <a class="brand" href="#overview"><span class="brand-mark" aria-hidden="true">SL</span><span>SightLine<span class="brand-ai"> AI</span><small>VISUAL INTELLIGENCE</small></span></a>
+  <p class="nav-label">WORKSPACE</p><nav id="workspace-nav" aria-label="Workspace"></nav>
+  <p class="nav-label system-label">SYSTEM</p><nav id="system-nav" aria-label="System"></nav>
+  <div class="sidebar-foot"><span class="status-dot"></span> <span>Local development shell</span><small id="hardware-foot">Inspecting environment…</small><small>v0.4.0 · Local visual workflows</small></div>
+</aside>
+<div class="workspace">
+  <header class="topbar"><div><span class="breadcrumb">Workspace / </span><span id="page-name">Overview</span></div><div class="top-status"><span>Local host</span><span class="badge warning">NPU unverified</span></div></header>
+  <main id="main" tabindex="-1"></main>
+  <footer>CORE PROCESSING RUNS LOCALLY <span>CPU fallback · Evidence required for NPU claims</span></footer>
+</div>
+<div id="announcement" class="sr-only" role="status" aria-live="polite"></div>
+<noscript><p>Enable JavaScript to use the local workspace. Runtime diagnostics are also available with python -m scripts.verify_environment.</p></noscript>
+</body></html>

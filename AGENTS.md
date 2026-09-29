@@ -1,0 +1,11 @@
+# SightLine engineering rules
+- Never fabricate hardware, provider execution, benchmarks, accuracy, privacy or test evidence.
+- No AWS and no mandatory cloud inference. Keep core processing local.
+- Prefer verified QNN HTP execution; support explicit CPU fallback. Requested, available and active providers are distinct.
+- Never label provider availability as NPU execution. Strict mode must fail closed.
+- Run relevant tests, lint and type checks after each phase; inspect the diff and record actual results.
+- Update documentation when architecture or behavior changes.
+- Review security changes. Never commit secrets or log image contents, filenames or extracted sensitive text.
+- Require accessible keyboard controls, readable contrast, clear errors and consistent design tokens.
+- Keep measured benchmarks reproducible and separate from examples.
+- Do not download or redistribute model weights without documented provenance and license.

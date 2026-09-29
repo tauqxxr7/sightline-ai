@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "kind": "measured_cpu_benchmark",
+  "id": "cb70fbe2ed474154929a5d7a2cb1233f",
+  "observed_at": "2026-09-29T06:25:43.085909+00:00",
+  "environment": {
+    "schema_version": 1,
+    "observed_at": "2026-09-29T06:25:42.579797+00:00",
+    "system": "Windows",
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+    "processor_source": "Python platform API; not a hardware certification",
+    "snapdragon": "not_detected",
+    "hardware": {
+      "system": "Windows",
+      "os_version": "10.0.26200",
+      "process_architecture": "AMD64",
+      "process_bits": 64,
+      "native_architecture": {
+        "value": "AMD64",
+        "source": "Windows IsWow64Process2",
+        "emulated": false,
+        "error": null
+      },
+      "processor": {
+        "qualcomm": "not_detected",
+        "snapdragon": "not_detected",
+        "source": "Windows processor registry",
+        "values": {
+          "ProcessorNameString": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+          "Identifier": "Intel64 Family 6 Model 140 Stepping 1",
+          "VendorIdentifier": "GenuineIntel"
+        },
+        "error": null,
+        "note": "CPU identity only; not evidence of NPU execution"
+      }
+    },
+    "python": {
+      "version": "3.12.2",
+      "implementation": "cpython"
+    },
+    "runtime_version": "1.30.0",
+    "runtime_error": null,
+    "qnn_ep_available": false,
+    "provider": {
+      "requested": "CPUExecutionProvider",
+      "available": [
+        "AzureExecutionProvider",
+        "CPUExecutionProvider"
+      ],
+      "selected": "CPUExecutionProvider",
+      "active": null,
+      "fallback": "not_started",
+      "npu": "QNN/NPU not verified on this device",
+      "backend": null,
+      "strict": false,
+      "npu_verified": false
+    },
+    "model": null,
+    "measurements": null,
+    "phase": "Phase 3 provider verification"
+  },
+  "model": {
+    "name": "YOLOX-Nano",
+    "version": "0.1.1rc0",
+    "sha256": "c789161ed43c8269fcd4e67c67eeeb4e80c622da2eb296a20bc6007bd18a0b7d",
+    "precision": "FP32",
+    "input_shape": [
+      1,
+      3,
+      416,
+      416
+    ]
+  },
+  "runtime": {
+    "requested": "CPUExecutionProvider",
+    "available": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "active": "CPUExecutionProvider",
+    "backend": "CPU",
+    "fallback": "not_requested",
+    "npu": "QNN/NPU not verified on this device",
+    "npu_verified": false,
+    "version": "1.30.0",
+    "evidence": "Successful run in a CPU-only session with runtime fallback disabled"
+  },
+  "input": {
+    "fixture": "NASA astronaut PNG",
+    "sha256": "88431cd9653ccd539741b555fb0a46b61558b301d4110412b5bc28b5e3ea6cb5",
+    "dimensions": {
+      "width": 512,
+      "height": 512
+    }
+  },
+  "configuration": {
+    "samples": 10,
+    "warmups": 2,
+    "intra_op_threads": 2,
+    "inter_op_threads": 1,
+    "percentile_method": "nearest rank",
+    "stdev_method": "population"
+  },
+  "cold": {
+    "timings_ms": {
+      "initialization": 81.65359999998145,
+      "preprocessing": 55.17690000010589,
+      "inference": 16.711100000065926,
+      "postprocessing": 3.245500000048196,
+      "total_pipeline": 157.08900000004178
+    },
+    "scope": "Fresh ORT session; not process/OS cold"
+  },
+  "runs": [
+    {
+      "phase": "warmup",
+      "index": 1,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 14.53270000001794,
+        "inference": 14.600999999856867,
+        "postprocessing": 3.1093000000055326,
+        "total_pipeline": 32.41610000009132
+      }
+    },
+    {
+      "phase": "warmup",
+      "index": 2,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 17.164500000035332,
+        "inference": 9.818600000016886,
+        "postprocessing": 2.3916000000099302,
+        "total_pipeline": 29.524399999900197
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 1,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 12.100000000145883,
+        "inference": 9.543800000074043,
+        "postprocessing": 3.034400000160531,
+        "total_pipeline": 24.825100000043676
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 2,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 11.59589999997479,
+        "inference": 13.413700000000972,
+        "postprocessing": 2.448899999990317,
+        "total_pipeline": 27.60990000001584
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 3,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 15.476099999887083,
+        "inference": 17.84769999994751,
+        "postprocessing": 4.524599999967904,
+        "total_pipeline": 38.06769999982862
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 4,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 14.190699999971912,
+        "inference": 16.88879999983328,
+        "postprocessing": 3.5090999999738415,
+        "total_pipeline": 34.75370000001021
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 5,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 12.457900000072186,
+        "inference": 12.86019999997734,
+        "postprocessing": 2.9963000001771434,
+        "total_pipeline": 28.501600000026883
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 6,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 11.941200000137542,
+        "inference": 12.432699999862962,
+        "postprocessing": 3.6871999998311367,
+        "total_pipeline": 28.250500000012835
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 7,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 11.36780000001636,
+        "inference": 9.761200000184544,
+        "postprocessing": 3.01139999987754,
+        "total_pipeline": 24.320400000078735
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 8,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 12.844099999938408,
+        "inference": 10.32500000019354,
+        "postprocessing": 2.4840999999469204,
+        "total_pipeline": 25.808500000039203
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 9,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 12.864999999919746,
+        "inference": 10.170199999947727,
+        "postprocessing": 2.705500000047323,
+        "total_pipeline": 25.89769999985947
+      }
+    },
+    {
+      "phase": "measured",
+      "index": 10,
+      "timings_ms": {
+        "initialization": null,
+        "preprocessing": 10.558700000046883,
+        "inference": 11.631500000021333,
+        "postprocessing": 2.4585999999544583,
+        "total_pipeline": 24.805900000046677
+      }
+    }
+  ],
+  "summary_ms": {
+    "preprocessing": {
+      "count": 10,
+      "mean": 12.53974000001108,
+      "median": 12.278950000109035,
+      "p95": 15.476099999887083,
+      "stdev": 1.3525318488920381,
+      "min": 10.558700000046883,
+      "max": 15.476099999887083
+    },
+    "inference": {
+      "count": 10,
+      "mean": 12.487480000004325,
+      "median": 12.032099999942147,
+      "p95": 17.84769999994751,
+      "stdev": 2.756447775886497,
+      "min": 9.543800000074043,
+      "max": 17.84769999994751
+    },
+    "postprocessing": {
+      "count": 10,
+      "mean": 3.0860099999927115,
+      "median": 3.0038500000273416,
+      "p95": 4.524599999967904,
+      "stdev": 0.6271275666680401,
+      "min": 2.448899999990317,
+      "max": 4.524599999967904
+    },
+    "total_pipeline": {
+      "count": 10,
+      "mean": 28.284099999996215,
+      "median": 26.753799999937655,
+      "p95": 38.06769999982862,
+      "stdev": 4.355163696303433,
+      "min": 24.320400000078735,
+      "max": 38.06769999982862
+    }
+  },
+  "memory_bytes": null,
+  "memory_note": "Not measured; Python heap is not process/native memory",
+  "fps": null,
+  "fps_note": "Static-image benchmark; no video FPS measured",
+  "elapsed_ms": 506.0924000001705,
+  "limitations": [
+    "CPU baseline only; no QNN comparison",
+    "One repeated image, not accuracy evaluation",
+    "UI rendering and HTTP transfer excluded",
+    "OS cache and thermal state uncontrolled"
+  ]
+}

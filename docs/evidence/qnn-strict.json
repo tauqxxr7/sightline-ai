@@ -1,0 +1,64 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-28T17:09:26.713509+00:00",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "processor_source": "Python platform API; not a hardware certification",
+  "snapdragon": "not_detected",
+  "hardware": {
+    "system": "Windows",
+    "os_version": "10.0.26200",
+    "process_architecture": "AMD64",
+    "process_bits": 64,
+    "native_architecture": {
+      "value": "AMD64",
+      "source": "Windows IsWow64Process2",
+      "emulated": false,
+      "error": null
+    },
+    "processor": {
+      "qualcomm": "not_detected",
+      "snapdragon": "not_detected",
+      "source": "Windows processor registry",
+      "values": {
+        "ProcessorNameString": "11th Gen Intel(R) Core(TM) i5-1135G7 @ 2.40GHz",
+        "Identifier": "Intel64 Family 6 Model 140 Stepping 1",
+        "VendorIdentifier": "GenuineIntel"
+      },
+      "error": null,
+      "note": "CPU identity only; not evidence of NPU execution"
+    }
+  },
+  "python": {
+    "version": "3.12.2",
+    "implementation": "cpython"
+  },
+  "runtime_version": "1.30.0",
+  "runtime_error": null,
+  "qnn_ep_available": false,
+  "provider": {
+    "requested": "QNNExecutionProvider",
+    "available": [
+      "AzureExecutionProvider",
+      "CPUExecutionProvider"
+    ],
+    "selected": null,
+    "active": null,
+    "fallback": "forbidden",
+    "backend": null,
+    "npu": "QNN/NPU not verified on this device",
+    "strict": true,
+    "npu_verified": false,
+    "fallback_reason": "qnn_unavailable",
+    "message": "QNN Execution Provider was not detected."
+  },
+  "model": null,
+  "measurements": null,
+  "phase": "Phase 3 provider verification",
+  "verification": "failed",
+  "error": {
+    "code": "qnn_unavailable",
+    "message": "QNN Execution Provider was not detected. Strict mode forbids CPU fallback. QNN/NPU not verified on this device"
+  }
+}

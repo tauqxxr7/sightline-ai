@@ -1,0 +1,22 @@
+[
+  {
+    "path": "submission/assets/phase4-performance-final.png",
+    "bytes": 161726,
+    "sha256": "fa6002d98ac84fe39174489cff3e39b809386303c29ef37edf24530ed4f48c56"
+  },
+  {
+    "path": "submission/assets/phase4-privacy.png",
+    "bytes": 146274,
+    "sha256": "b9ad3d409a150029fc36a35f0e6735c206a384e5b62f318ab30485afae115880"
+  },
+  {
+    "path": "submission/assets/phase4-screen.png",
+    "bytes": 156957,
+    "sha256": "c225b9d451d7b517b23d9e4fa6acbb43a9584c9be25a76c30c7d22f435b5b2f7"
+  },
+  {
+    "path": "submission/assets/phase4-visual.png",
+    "bytes": 145394,
+    "sha256": "47dc5374c2de36fbe7a36c1dc0e71b718a0d2a03b5b0711ac5bdc7d915b397fb"
+  }
+]

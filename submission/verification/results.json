@@ -1,0 +1,143 @@
+{
+  "timestamp_utc": "2026-09-29T18:14:02.549791+00:00",
+  "checks": [
+    {
+      "name": "python-tests",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pytest",
+        "-q"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "javascript-tests",
+      "command": [
+        "node",
+        "--test",
+        "--test-isolation=none",
+        "tests/*.test.js"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "ruff",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "check",
+        "."
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "format",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "ruff",
+        "format",
+        "--check",
+        "."
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "types",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "mypy"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "javascript-syntax",
+      "command": [
+        "cmd",
+        "/c",
+        "npm run check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "dependencies",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "pip",
+        "check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "diff",
+      "command": [
+        "git",
+        "diff",
+        "--check"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "environment",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_environment",
+        "--provider",
+        "qnn",
+        "--output",
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\submission\\verification\\environment.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    },
+    {
+      "name": "qnn-strict",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_qnn",
+        "--output",
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\submission\\verification\\qnn-strict.json"
+      ],
+      "exit_code": 2,
+      "expected_exit_code": 2,
+      "passed": true
+    },
+    {
+      "name": "cpu-fallback",
+      "command": [
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\.venv\\Scripts\\python.exe",
+        "-m",
+        "scripts.verify_qnn",
+        "--allow-cpu-fallback",
+        "--output",
+        "C:\\Users\\TAUQEER BHARDE\\Documents\\Codex\\2026-09-27\\files-pasted-by-the-user-you\\outputs\\sightline-ai\\submission\\verification\\cpu-fallback.json"
+      ],
+      "exit_code": 0,
+      "expected_exit_code": 0,
+      "passed": true
+    }
+  ]
+}

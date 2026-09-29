@@ -1,0 +1,27 @@
+✔ clipboard import selects actual image bytes and safe generated filename (5.3542ms)
+✔ clipboard unavailable, denied and text-only states give actionable errors (1.0387ms)
+✔ unsupported clipboard images are rejected (0.2256ms)
+✔ benchmark response rejects missing, fake-kind or non-CPU results (0.2306ms)
+✔ shared detail escaping prevents runtime strings becoming markup (0.8212ms)
+✔ manual regions reject empty, fractional, invalid and out-of-image coordinates (0.867ms)
+✔ drag regions support reverse drags and clamp to the image (0.2414ms)
+✔ solid fill replaces every crop channel, including alpha, without mutating source (0.8029ms)
+✔ pixelation averages the crop and handles partial blocks (0.2723ms)
+✔ blur changes spatial detail and preserves uniform colors including tiny regions (0.8904ms)
+✔ unknown transformations and malformed crop buffers are rejected (0.1814ms)
+✔ matching PNG and JPEG headers accepted (0.1649ms)
+✔ empty and oversized files rejected (0.1089ms)
+✔ MIME, extension and content must agree (0.1566ms)
+✔ image dimensions reject invalid and excessive values (0.1427ms)
+✔ result validation rejects stale dimensions and bad coordinates (0.289ms)
+✔ canvas uses original-image box geometry and labels (0.333ms)
+✔ visual inventory derives only from actual detection labels (0.1365ms)
+✔ QNN output requires explicit verified execution (0.0994ms)
+ℹ tests 19
+ℹ suites 0
+ℹ pass 19
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 193.7217

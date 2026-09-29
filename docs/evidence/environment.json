@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "observed_at": "2026-09-27T07:19:22.559861+00:00",
+  "system": "Windows",
+  "architecture": "AMD64",
+  "processor": "Intel64 Family 6 Model 140 Stepping 1, GenuineIntel",
+  "processor_source": "Python platform API; not a hardware certification",
+  "snapdragon": "unverified",
+  "runtime_version": null,
+  "runtime_error": "ONNX Runtime is not installed or could not be imported.",
+  "provider": {
+    "requested": "QNNExecutionProvider",
+    "available": [],
+    "selected": null,
+    "active": null,
+    "fallback": "unavailable",
+    "npu": "QNN/NPU not verified on this device",
+    "backend": null
+  },
+  "model": null,
+  "measurements": null,
+  "phase": "Phase 1 foundation"
+}

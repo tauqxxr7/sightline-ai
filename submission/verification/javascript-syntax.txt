@@ -1,0 +1,4 @@
+
+> sightline-ui@0.4.0 check
+> node --check ui/app.js && node --check ui/lib/files.js && node --check ui/lib/results.js && node --check ui/pages/visual.js && node --check ui/pages/privacy.js && node --check ui/lib/privacy.js && node --check ui/lib/clipboard.js && node --check ui/lib/view.js && node --check ui/pages/performance.js
+
